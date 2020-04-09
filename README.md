@@ -1,7 +1,7 @@
 AngularJS directive to Summernote, Support AngularJS1.7.9 AND summernote 0.8.16
 Fork From [angular-summernote](https://github.com/summernote/angular-summernote) and make some change.
 
-* Bower: `bower install bower-angular-summernote`
+* Bower: `bower install GrowPlusPlus/bower-angular-summernote --save`
 
 other document should follow angular-summernote
 
