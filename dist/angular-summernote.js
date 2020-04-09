@@ -1,4 +1,4 @@
-/*  angular-summernote v0.8.1 | (c) 2016 JeongHoon Byun | MIT license */
+/*  bower-angular-summernote v0.8.16 | (c) 2016 JeongHoon Byun | MIT license */
 /* global angular */
 angular.module('summernote', [])
 
@@ -94,6 +94,15 @@ angular.module('summernote', [])
           $scope.change({contents: contents, editable: $scope.editable});
         } else if (angular.isFunction(originalOnChange)) {
           originalOnChange.apply(this, arguments);
+        }
+      };
+      var originalOnEnter = summernoteConfig.callbacks.onEnter;
+      summernoteConfig.callbacks.onEnter = function (evt) {
+        $timeout(function () {
+          updateNgModel();
+        }, 0);
+        if (angular.isFunction(originalOnEnter)) {
+          originalOnEnter.apply(this, arguments);
         }
       };
       if (angular.isDefined($attrs.onBlur)) {
