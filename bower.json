@@ -1,7 +1,7 @@
 {
   "name": "bower-angular-summernote",
-  "description": "AngularJS directive to Summernote, Support AngularJS1.7.9 AND summernote 0.8.16",
-  "version": "0.8.16",
+  "description": "AngularJS directive to Summernote, Support AngularJS 1.8.2 AND summernote 0.8.18",
+  "version": "0.8.18",
   "main": [
         "./dist/angular-summernote.js"
   ],
@@ -21,15 +21,15 @@
   "authors": [
     {
     "name": "Bruce",
-    "url": "https://github.com/GrowPlusPlus/bower-angular-summernote"
+    "url": "https://github.com/askev/bower-angular-summernote"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/GrowPlusPlus/bower-angular-summernote.git"
+    "url": "git://github.com/askev/bower-angular-summernote.git"
   },
   "dependencies": {
-    "summernote": "~0.8.16",
-    "angular": "~1.7.9"
+    "summernote": "~0.8.18",
+    "angular": "~1.8.2"
   }
 }
